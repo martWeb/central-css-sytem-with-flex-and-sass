@@ -1,0 +1,165 @@
+section {
+  width: 100%;
+  padding: 15rem 10vw;
+
+  @include respond(tab-port) {
+    padding: 3rem 5vw;
+  }
+  // @include respond(phone) {
+  //   padding: 1rem 2vw;
+  // }
+}
+ul {
+  list-style: none;
+}
+.flex-1 {
+  display: flex;
+  @include respond(tab-port) {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  @include respond(phone) {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+}
+
+.flex-2 {
+  display: flex;
+  flex-direction: column;
+}
+// section with one of the children occupying 20% of the section
+.w2 {
+  width: 20%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+
+// section with one of the children occupying 30% of the section
+.w3 {
+  width: 30%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+// section with one of the children occupying 35% of the section
+.w35 {
+  width: 35%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+// section with one of the children occupying 40% of the section
+.wd-4 {
+  width: 40%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+// section with one of the children occupying 45% of the section
+.wd-45 {
+  width: 45%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+// section with one of the children occupying 50% of the section
+.w5 {
+  width: 50%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+// section with one of the children occupying 60% of the section
+.w6 {
+  width: 60%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+// section with one of the children occupying 65% of the section
+.w65 {
+  width: 65%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+// section with one of the children occupying 70% of the section
+.w7 {
+  width: 70%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+
+// section with one of the children occupying 80% of the section
+.w8 {
+  width: 30%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    color: black;
+  }
+  @include respond(phone) {
+    width: 100%;
+    color: black;
+  }
+}
+.right-margin {
+  margin-right: 2rem;
+}

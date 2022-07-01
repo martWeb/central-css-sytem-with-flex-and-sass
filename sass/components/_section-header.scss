@@ -1,0 +1,18 @@
+.section-header {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  @include respond(tab-port) {
+    width: 90%;
+  }
+  &__heading {
+    font-size: 4.5rem;
+    padding: 2rem;
+    color: $color-white;
+  }
+  &__text {
+    color: $color-white;
+    margin-bottom: 5rem;
+    font-size: $paragraph-font-size;
+  }
+}
