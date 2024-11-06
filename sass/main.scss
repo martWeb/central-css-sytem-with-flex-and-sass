@@ -2,16 +2,20 @@
 @import "abstracts/mixin";
 
 @import "base/base";
-@import "base/reset";
-@import "base/typography";
 @import "base/utils";
 
 @import "components/section-header";
 @import "components/video";
+@import "components/button";
 
 @import "layout/nav";
 @import "layout/footer";
 @import "layout/form";
 
 @import "pages/home";
-@import "pages/contact";
+
+.button {
+  background-color: #008000;
+  color: #ffffff;
+  cursor: pointer;
+}

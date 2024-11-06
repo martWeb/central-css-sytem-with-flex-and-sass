@@ -4,11 +4,11 @@
   "description": "A website for providing cleaning services",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass sass/main.scss assets/css/style.css -w"
+    "sass": "sass sass/main.scss assets/css/style.css -w"
   },
   "author": "Akinbo Martins",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.1" 
+    "sass": "^1.77.6"
   }
 }

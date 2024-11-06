@@ -1,165 +1,104 @@
-section {
-  width: 100%;
-  padding: 15rem 10vw;
-
-  @include respond(tab-port) {
-    padding: 3rem 5vw;
-  }
-  // @include respond(phone) {
-  //   padding: 1rem 2vw;
-  // }
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 75%; //1rem = 12px 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    //width < 1200
+    font-size: 68.75%; //1rem = 11px, 11/16 = 68.75%
+  }
+  @include respond(tab-port) {
+    //width < 900
+    font-size: 62.5%; //1rem = 10px, 10/16 = 62.5%
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 14, 14/16 = 62.5%
+  }
+}
+
+body {
+  font-family: "Lato", sans serif;
+  line-height: 1.2;
+}
+
 ul {
   list-style: none;
 }
-.flex-1 {
-  display: flex;
-  @include respond(tab-port) {
-    flex-direction: column;
-    margin-bottom: 3rem;
-  }
-  @include respond(phone) {
-    flex-direction: column;
-    margin-bottom: 3rem;
-  }
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }
 
-.flex-2 {
-  display: flex;
-  flex-direction: column;
-}
-// section with one of the children occupying 20% of the section
-.w2 {
-  width: 20%;
-
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
-  }
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  overflow-wrap: break-word;
 }
 
-// section with one of the children occupying 30% of the section
-.w3 {
-  width: 30%;
-
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
-  }
+// h1
+.heading-primary {
+  color: $color-white;
+  font-size: 2.5rem;
 }
-// section with one of the children occupying 35% of the section
-.w35 {
-  width: 35%;
-
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
-  }
+// h2
+.heading-secondary {
+  font-size: 2rem;
 }
-// section with one of the children occupying 40% of the section
-.wd-4 {
-  width: 40%;
-
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
-  }
+// h3
+.heading-tertiary {
+  font-size: 1.5rem;
 }
-// section with one of the children occupying 45% of the section
-.wd-45 {
-  width: 45%;
-
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
-  }
-}
-// section with one of the children occupying 50% of the section
-.w5 {
-  width: 50%;
-
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
-  }
-}
-// section with one of the children occupying 60% of the section
-.w6 {
-  width: 60%;
-
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
-  }
-}
-// section with one of the children occupying 65% of the section
-.w65 {
-  width: 65%;
-
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
-  }
-}
-// section with one of the children occupying 70% of the section
-.w7 {
-  width: 70%;
-
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
-  }
+// h4
+.heading-sub {
+  font-size: 2rem;
 }
 
-// section with one of the children occupying 80% of the section
-.w8 {
-  width: 30%;
+//Paragraph-------------------------
+.p-main {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
 
-  @include respond(tab-port) {
-    width: 100%;
-    color: black;
-  }
-  @include respond(phone) {
-    width: 100%;
-    color: black;
+//Anchor
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  :hover {
+    text-decoration: none;
   }
 }
-.right-margin {
-  margin-right: 2rem;
+// .cta-primary {
+//   color: $color-primary;
+// }
+// .cta-secondary {
+//   color: $color-secondary;
+// }
+// .cta-tertiary {
+//   color: $color-tertiary;
+// }
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }

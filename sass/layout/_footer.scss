@@ -1,7 +1,7 @@
 .footer {
   background: $color-primary;
   height: auto;
-  padding: 10rem 10vw;
+  padding-bottom: 0;
   @include respond(tab-port) {
     padding: 5rem 5vw 0 5vw;
   }
@@ -38,15 +38,6 @@
       flex-direction: column-reverse;
     }
   }
-  &__list {
-    width: 30%;
-    justify-content: space-between;
-    border: 1px solid red;
-    &-item a {
-      color: $color-white;
-      font-size: 1.5rem;
-    }
-  }
   &__copyright {
     width: 30%;
     @include respond(tab-port) {
@@ -66,9 +57,9 @@
     width: 30%;
     color: $color-white;
     justify-content: flex-end;
+
     @include respond(tab-port) {
       width: 100%;
-      flex-direction: row;
       justify-content: center;
     }
     & a {

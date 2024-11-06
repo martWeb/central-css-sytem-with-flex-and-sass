@@ -1,0 +1,91 @@
+.row-pd {
+  width: 100%;
+  padding: 10rem 10vw;
+  @include viewport(land-tab) {
+    padding: 5rem 7.5vw;
+  }
+  @include viewport(port-tab) {
+    padding: 3rem 5vw;
+  }
+  @include viewport(phone) {
+    padding: 3rem 2.5vw;
+  }
+}
+
+.row-mg {
+  width: 80%;
+  margin: auto;
+  @include viewport(port-tab) {
+    width: 90%;
+  }
+}
+
+.fl-row {
+  //desk
+  display: flex;
+  @include viewport(port-tab) {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+}
+
+.fl-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.wd-2 {
+  width: 20%;
+}
+
+.wd-3 {
+  width: 30%;
+}
+
+.wd-35 {
+  width: 35%;
+}
+
+.wd-4 {
+  width: 40%;
+}
+
+.wd-45 {
+  width: 45%;
+}
+
+.wd-5 {
+  width: 50%;
+}
+
+.wd-6 {
+  width: 60%;
+}
+
+.wd-65 {
+  width: 65%; // desktop
+}
+
+.wd-7 {
+  width: 70%;
+}
+
+.wd-2,
+.wd-3,
+.wd-35,
+.wd-4,
+.wd-45,
+.wd-5,
+.wd-55,
+.wd-6,
+.wd-65,
+.wd-7 {
+  @include viewport(port-tab) {
+    width: 100%;
+  }
+}
+.sm-row {
+  @include viewport(port-tab) {
+    flex-direction: row;
+  }
+}

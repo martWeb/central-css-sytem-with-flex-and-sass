@@ -1,0 +1,26 @@
+@mixin viewport($width) {
+  @if $width == phone {
+    @media only screen and (max-width: 37.5rem) {
+      @content;
+    }
+  }
+  @if $width == port-tab {
+    @media only screen and (max-width: 56.25rem) {
+      @content;
+    }
+  }
+  @if $width == land-tab {
+    @media only screen and (max-width: 75rem) {
+      @content;
+    }
+  }
+}
+@mixin tagline {
+  color: $color-light-grey-9;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: block;
+  width: auto;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3rem;
+}

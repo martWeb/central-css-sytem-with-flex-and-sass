@@ -2,14 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10vw;
+  padding-top: 0;
+  padding-bottom: 0;
   background: $color-primary;
   height: 7rem;
+  @include respond(phone) {
+    padding: 0 5vw;
+    border-bottom: 1px solid #444;
+  }
   & .logo {
     color: #ffffff;
     font-size: 2.5rem;
-    font-weight: 700;
     text-decoration: none;
+    font-weight: 700;
+    @include respond(phone) {
+      text-wrap: nowrap;
+      font-size: 1.5rem;
+      // font-weight: 100;
+    }
   }
   & .navigation {
     &__list {
@@ -18,16 +28,19 @@
       list-style: none;
     }
     &__item {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-left: 2rem;
-      &-link {
-        color: $color-white;
-        text-decoration: none;
-        &--last {
-          background: $color-secondary;
-          padding: 1rem;
-          border-radius: 1rem;
-        }
+      font-weight: bold;
+    }
+    &__link {
+      color: $color-white;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-weight: bold;
+      &--last {
+        background: $color-secondary;
+        padding: 1rem;
+        border-radius: 1rem;
       }
     }
   }
